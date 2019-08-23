@@ -1,0 +1,18 @@
+ private void btncalcularActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+        calcpan.setVisible(true);
+        int n = Integer.parseInt(textnum.getValue().toString());
+        int r = n % 2;
+        lbldiv.setText(Integer.toString(r));
+        double elev = Math.pow(n , 3);
+        lblelev.setText(Double.toString(elev));
+        double raiz = (double)Math.sqrt(n);
+        lblraiz.setText(String.format("%.2f", raiz));
+        int abs = (int)Math.abs(n);
+        lblvalor.setText(Float.toString(abs));
+        
+        
+        
+        
+        
+    }                                          
