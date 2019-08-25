@@ -1,0 +1,16 @@
+  private void btnActionPerformed(java.awt.event.ActionEvent evt) {                                    
+        // TODO add your handling code here:
+        double n = 1 + Math.random() * (11-1);
+        int valor = (int) n;
+        
+        int num = Integer.parseInt(textnum.getValue().toString());
+        
+        String f1 = "<html>ACERTOU!<html>";
+        String f2 = "<html>ERROU! Eu pensei no valor<html> " + valor;
+        
+        String res = (valor == num)? f1:f2;
+        
+        lblfrase.setFont(new Font("arial black" ,Font.PLAIN,15));
+        
+        lblfrase.setText(res);
+    }                                   
