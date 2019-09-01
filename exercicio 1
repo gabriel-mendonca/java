@@ -1,0 +1,61 @@
+/*Escreva um programa efetuar o cálculo do salário bruto e do salário
+
+líquido de um empregado. Os dados fornecidos são:
+
+ - O valor do salário hora
+
+- O número de horas trabalhadas no mês
+
+- O percentual de desconto do INSS*/
+package exercicio1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gabrielmendonca
+ */
+public class Exercicio1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner Dados = new Scanner (System.in);
+        String nomefunc;
+        double salhora;
+        double horames; 
+        double inss = 1.10;
+        double salBruto; 
+        double salLiquido; 
+        
+        System.out.println("Entre com o nome do colaborador: ");
+        nomefunc = Dados.nextLine();
+        System.out.println("Entre com o numero de horas trabalhadas no mes: ");
+        horames = Dados.nextDouble();
+        System.out.println("O valor da hora trabalhada no mes: ");
+        salhora = Dados.nextDouble();
+        
+        salBruto = salhora * horames;
+        
+        System.out.println("o valor do salario bruto é R$ = " + salBruto);
+        
+        salLiquido = salBruto - inss;
+        System.out.println("                            ");
+        
+        System.out.println("********** DADOS DO COLABORADOR *************");
+        
+        
+        System.out.println("nome: " + nomefunc);
+        System.out.println("ganha por hora: " + salhora);
+        System.out.println("trabalhou por mes: " + horames);
+        System.out.println("recebera o valor liquido de R$ = " + salLiquido);
+        
+        
+		
+        
+                
+	}
+
+}
