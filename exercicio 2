@@ -1,0 +1,75 @@
+/* Escreva um programa para ler 3 notas de um aluno e informar se
+
+o alunos está aprovado, reprovado ou se deverá fazer a prova
+
+final.
+
+O aluno será Aprovado a média de suas notas for > 6
+
+O aluno será Reprovado se a média de suas notas for < 4
+
+O aluno deverá fazer a prova se a média de suas notas for >= 4 e < 6
+
+ 
+
+Média das notas: (Nota1 + Nota2 + Nota3) / 3 */
+ 
+package exercicio2;
+
+import java.util.Scanner;
+
+
+public class Exercicio2 {
+
+    
+    
+    public static void main(String[] args) {
+        
+        Scanner Dados = new Scanner (System.in);
+      String nomeAluno;
+      double b1,b2,b3,media;
+      
+      String a = "APROVADO!";
+      String sub = "RECUPERACAO!";
+      String r = "REPROVADO!";
+      
+        System.out.println(" :::::::::: PROGRAMA ::::::::::");
+        System.out.println(" calcular ");
+        System.out.println(" Entre com o nome do aluno: ");
+        nomeAluno = Dados.nextLine();
+        
+        
+        System.out.println("digite a nota do primeiro bimestre: ");
+        b1 = Dados.nextDouble();
+        System.out.println("digite a nota do segundo bimestre: ");
+        b2 = Dados.nextDouble();
+        System.out.println("digite a nota do terceiro bimestre: ");
+        b3 = Dados.nextDouble();
+        
+        media = (b1 + b2 + b3)/3;
+        
+        
+        if (media < 4)
+        {
+            System.out.println(nomeAluno + "foi " + r );
+        }
+        else if ((media >=4) && (media < 6))
+        {
+            System.out.println(nomeAluno + " ficou de " + sub );
+        }
+        else if ( media > 6)
+        {
+            System.out.println(nomeAluno + " foi " + a );
+        }
+        
+       
+        
+       
+        
+        
+        
+        
+        }
+        
+        }
+        
